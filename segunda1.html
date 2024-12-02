@@ -31,7 +31,6 @@
             height: 400px;
             margin-top: 20px;
         }
-        /* Estilo dos botões */
         button {
             background-color: red;
             color: white;
@@ -80,20 +79,6 @@
             font-size: 15px;
             margin-left: 20px;
         }
-
-        /* Controle do tamanho dos botões */
-        #cancelarBtn {
-            width: 300px; /* Largura maior para o botão de cancelamento */
-            height: 60px; /* Altura maior */
-            font-size: 24px; /* Tamanho da fonte maior */
-        }
-
-        #agendarBtn {
-            width: 300px; /* Largura menor para o botão de agendar */
-            height: 60px; /* Altura menor */
-            font-size: 20px; /* Tamanho da fonte menor */
-        }
-
         button {
             font-size: 28px;
             padding: 15px 25px;
@@ -183,13 +168,10 @@
                 <li>
                     <button type="button" id="agendarBtn" onclick="agendarLavagem()" disabled>Agendar lavagem</button>
                 </li>
-                <li>
-                    <button type="button" id="cancelarBtn" onclick="cancelarAgendamento()">Cancelar agendamento</button>
-                </li>
+               
             
             </ul>
         </form>
- 
     </div>
 
     <style>
@@ -254,15 +236,7 @@
         function agendarLavagem() {
             console.log("Lavagem agendada com sucesso!");
             // Redireciona para a próxima página
-            window.location.href = 'Terçeira.html'; // Substitua 'pagina2.html' pelo URL de sua página
-        }
-
-        // Função para cancelar o agendamento
-        function cancelarAgendamento() {
-            // Exibe mensagem de cancelamento
-            alert("Você cancelou seu agendamento.");
-            // Redireciona para a página inicial (substitua o link conforme necessário)
-            window.location.href = 'index.html'; // A página inicial pode ser 'index.html' ou outra página
+            window.location.href = 'terçeira.html'; // Substitua 'pagina2.html' pelo URL de sua página
         }
 
         // Função para aplicar a máscara no número de telefone
